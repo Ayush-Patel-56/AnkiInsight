@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ankiinsight.app.presentation.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_deckSelector"
+            app:destination="@id/deckSelectorFragment" />
+        <action
+            android:id="@+id/action_home_to_conflictDetector"
+            app:destination="@id/conflictDetectorFragment" />
+        <action
+            android:id="@+id/action_home_to_insights"
+            app:destination="@id/insightsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deckSelectorFragment"
+        android:name="com.ankiinsight.app.presentation.decks.DeckSelectorFragment"
+        android:label="Deck Selector">
+        <action
+            android:id="@+id/action_deckSelector_to_failureAnalyser"
+            app:destination="@id/failureAnalyserFragment" />
+        <action
+            android:id="@+id/action_deckSelector_to_conceptGap"
+            app:destination="@id/conceptGapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/failureAnalyserFragment"
+        android:name="com.ankiinsight.app.presentation.failure.FailureAnalyserFragment"
+        android:label="Failure Analyser">
+        <argument
+            android:name="deckId"
+            app:argType="long" />
+        <argument
+            android:name="deckName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_failureAnalyser_to_cardRegenerated"
+            app:destination="@id/cardRegeneratedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardRegeneratedFragment"
+        android:name="com.ankiinsight.app.presentation.regenerated.CardRegeneratedFragment"
+        android:label="Card Regenerated">
+        <argument android:name="originalFront" app:argType="string" />
+        <argument android:name="originalBack" app:argType="string" />
+        <argument android:name="regenFront" app:argType="string" />
+        <argument android:name="regenBack" app:argType="string" />
+        <argument android:name="cardId" app:argType="long" />
+        <argument android:name="deckId" app:argType="long" />
+        <argument android:name="easeFactor" app:argType="integer" />
+        <argument android:name="modelId" app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/conceptGapFragment"
+        android:name="com.ankiinsight.app.presentation.gap.ConceptGapFragment"
+        android:label="Concept Gap Detector">
+        <argument
+            android:name="deckId"
+            app:argType="long" />
+        <argument
+            android:name="deckName"
+            app:argType="string" />
+        <argument
+            android:name="failedCount"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/conflictDetectorFragment"
+        android:name="com.ankiinsight.app.presentation.conflict.ConflictDetectorFragment"
+        android:label="Conflict Detector" />
+
+    <fragment
+        android:id="@+id/insightsFragment"
+        android:name="com.ankiinsight.app.presentation.insights.InsightsFragment"
+        android:label="Insights">
+        <action
+            android:id="@+id/action_insights_to_deckSelector"
+            app:destination="@id/deckSelectorFragment" />
+    </fragment>
+
+</navigation>

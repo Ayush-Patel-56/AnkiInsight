@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnkiInsight</string>
+
+    <!-- Home -->
+    <string name="ankidroid_connected">AnkiDroid Connected</string>
+    <string name="analyse_your_learning">ANALYSE YOUR LEARNING</string>
+    <string name="failure_analyser">Failure Analyser</string>
+    <string name="failure_analyser_desc">Find and fix cards you keep forgetting</string>
+    <string name="concept_gap_detector">Concept Gap Detector</string>
+    <string name="concept_gap_desc">Discover missing knowledge behind failures</string>
+    <string name="conflict_detector">Conflict Detector</string>
+    <string name="conflict_detector_desc">Find cards that contradict each other</string>
+    <string name="your_stats_today">YOUR STATS TODAY</string>
+    <string name="cards_due">CARDS DUE</string>
+    <string name="failed_today">FAILED TODAY</string>
+    <string name="conflicts_found">CONFLICTS FOUND</string>
+
+    <!-- Errors -->
+    <string name="ankidroid_not_installed_title">AnkiDroid Not Found</string>
+    <string name="ankidroid_not_installed_message">AnkiInsight requires AnkiDroid to be installed to read your flashcard data.</string>
+    <string name="install_ankidroid">Install AnkiDroid</string>
+    <string name="permission_denied_title">Permission Required</string>
+    <string name="permission_denied_message">AnkiInsight needs permission to read your AnkiDroid database to analyse your flashcards.</string>
+    <string name="grant_permission">Grant Permission</string>
+
+    <!-- Deck Selector -->
+    <string name="choose_a_deck">CHOOSE A DECK TO ANALYSE</string>
+    <string name="search_decks">Search decks…</string>
+    <string name="tap_to_start">TAP A DECK TO START AI ANALYSIS</string>
+    <string name="no_decks">No decks found in AnkiDroid. Create some decks and cards first.</string>
+
+    <!-- Failure Analyser -->
+    <string name="failed_cards">FAILED CARDS</string>
+    <string name="analysing_failed_cards">Analysing failed cards with AI…</string>
+    <string name="no_failed_cards">No struggling cards found 🎉 Keep up the great work!</string>
+    <string name="regenerate_with_ai">✦ Regenerate with AI</string>
+    <string name="skip">Skip</string>
+    <string name="regenerate_all_failed">✦ Regenerate All Failed Cards</string>
+    <string name="question">QUESTION</string>
+    <string name="answer">ANSWER</string>
+
+    <!-- Card Regenerated -->
+    <string name="review_ai_suggestion">Review AI suggestion</string>
+    <string name="ai_has_rewritten">AI has rewritten this card. Review and decide.</string>
+    <string name="original_card">⚠ ORIGINAL CARD</string>
+    <string name="ai_regenerated">↓ AI REGENERATED</string>
+    <string name="new_card">✦ NEW CARD</string>
+    <string name="rewritten_with_analogy">✏ Rewritten with analogy</string>
+    <string name="accept_save">✓ Accept &amp; Save to AnkiDroid</string>
+    <string name="reject_try_again">↺ Reject &amp; Try Again</string>
+    <string name="trying_again">Trying again…</string>
+    <string name="card_saved">Card saved to AnkiDroid!</string>
+
+    <!-- Concept Gap -->
+    <string name="ai_found_missing">AI found missing concepts behind your failures</string>
+    <string name="gaps_found">GAPS FOUND</string>
+    <string name="missing_concept">MISSING CONCEPT</string>
+    <string name="needed_for">NEEDED FOR:</string>
+    <string name="generate">+ GENERATE</string>
+    <string name="generate_all_missing">+ GENERATE ALL MISSING CARDS</string>
+    <string name="no_gaps_found">No missing concepts found. Great coverage!</string>
+
+    <!-- Conflict Detector -->
+    <string name="scanning_all_decks">Scanning all decks…</string>
+    <string name="comparing_cards">Comparing cards across decks…</string>
+    <string name="scan_complete">Scan complete</string>
+    <string name="conflicts_found_label">CONFLICTS FOUND</string>
+    <string name="no_conflicts_found">✓ All decks look clean! No conflicts found.</string>
+    <string name="tag_as_conflicted">Tag as Conflicted</string>
+    <string name="keep_both">Keep Both</string>
+    <string name="tag_all_conflicts">⚠ Tag All Conflicts</string>
+    <string name="scan_decks">Scan Decks</string>
+    <string name="found_in_different_decks">Found in 2 different decks</string>
+
+    <!-- Insights -->
+    <string name="your_learning_health">YOUR LEARNING HEALTH</string>
+    <string name="learning_health_score">Learning Health Score</string>
+    <string name="weak">WEAK</string>
+    <string name="average">AVERAGE</string>
+    <string name="strong">STRONG</string>
+    <string name="forgetting_patterns">FORGETTING PATTERNS</string>
+    <string name="weakest_topics">WEAKEST TOPICS</string>
+    <string name="start_analysis">Start Analysis →</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AnkiInsight" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_background</item>
+        <item name="colorError">@color/color_error</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="materialCardViewStyle">@style/CardStyle</item>
+        <item name="bottomNavigationStyle">@style/BottomNavStyle</item>
+    </style>
+
+    <style name="CardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardBackgroundColor">@color/color_background</item>
+    </style>
+
+    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+
+    </style>
+
+    <style name="TextAppearance.AnkiInsight.ScoreValue" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:textSize">56sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/color_primary</item>
+    </style>
+
+    <style name="TextAppearance.AnkiInsight.SectionLabel" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.AnkiInsight.CardTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/color_primary</item>
+        <item name="android:textColor">@color/color_background</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Button.Danger" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/color_error</item>
+        <item name="android:textColor">@color/color_error</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+</resources>

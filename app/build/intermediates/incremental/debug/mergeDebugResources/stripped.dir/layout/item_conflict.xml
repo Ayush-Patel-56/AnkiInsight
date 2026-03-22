@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/color_divider">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="@color/color_surface_variant">
+            <TextView
+                android:id="@+id/tvConflictType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTRADICTION"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_badge_contradiction"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/tvDeckInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Found in 2 different decks"
+                android:textSize="12sp"
+                android:textColor="@color/color_text_secondary"/>
+        </LinearLayout>
+
+        <!-- Explanation -->
+        <TextView
+            android:id="@+id/tvConflictExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp"
+            android:text="Card A says action potentials are all-or-nothing, Card B says they can be graded."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="@color/color_text_primary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_divider"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Cards Side by Side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!-- Card A -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/tvCardADeck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEUROBIOLOGY 101"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/color_text_hint"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Q:"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_secondary"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/tvCardAQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are action potentials graded?"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_text_primary"
+                    android:layout_marginBottom="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A:"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_secondary"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/tvCardAAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No, they are all-or-nothing."
+                    android:textSize="13sp"
+                    android:textColor="@color/color_text_secondary"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_divider"/>
+
+            <!-- Card B -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#FAFAFA"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/tvCardBDeck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PHYSIOLOGY DECK"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/color_text_hint"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Q:"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_secondary"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/tvCardBQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Describe action potentials."
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_text_primary"
+                    android:layout_marginBottom="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A:"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_secondary"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/tvCardBAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="They can be graded depending on the stimulus."
+                    android:textSize="13sp"
+                    android:textColor="@color/color_text_secondary"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_divider"/>
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="2">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTagConflicted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tag_as_conflicted"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="@color/color_error"
+                android:textColor="@color/color_error"
+                app:cornerRadius="8dp"
+                android:layout_marginEnd="4dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnKeepBoth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/keep_both"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:textColor="@color/color_text_secondary"
+                app:cornerRadius="8dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

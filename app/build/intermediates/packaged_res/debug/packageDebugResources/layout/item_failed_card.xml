@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/color_divider">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:textColor="@color/color_text_secondary"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is a mitochondria?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_divider"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:textColor="@color/color_text_secondary"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Powerhouse of the cell"
+            android:textSize="14sp"
+            android:textColor="@color/color_text_primary"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tvFailedBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Failed 5x"
+                app:chipBackgroundColor="@color/color_error_light"
+                android:textColor="@color/color_error"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/tvLastFailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last failed today"
+                android:textSize="12sp"
+                android:textColor="@color/color_text_secondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegenerateWithAi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/regenerate_with_ai"
+                android:backgroundTint="@color/color_primary_light"
+                android:textColor="@color/color_primary_dark"
+                app:cornerRadius="8dp"
+                android:layout_marginEnd="4dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSkip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skip"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="@color/color_text_hint"
+                android:textColor="@color/color_text_secondary"
+                app:cornerRadius="8dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

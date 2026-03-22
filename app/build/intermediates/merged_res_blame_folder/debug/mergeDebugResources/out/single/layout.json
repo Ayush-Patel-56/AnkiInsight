@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_card_regenerated.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_card_regenerated.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/item_conflict.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/item_conflict.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_insights.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_insights.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_deck_selector.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_deck_selector.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_failure_analyser.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_failure_analyser.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/item_deck.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/item_deck.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/item_failed_card.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/item_failed_card.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/item_gap.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/item_gap.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_conflict_detector.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_conflict_detector.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_concept_gap.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_concept_gap.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-mergeDebugResources-54:/layout/fragment_home.xml",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_home.xml"
+    }
+]

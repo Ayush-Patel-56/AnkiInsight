@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_failure_analyser.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_failure_analyser.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_item_deck.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/item_deck.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_health_gradient.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_health_gradient.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_arrow_down.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_arrow_down.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_search.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_home.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_green_dot.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_green_dot.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_home.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_concept_gap.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_concept_gap.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_deck_selector.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_deck_selector.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_bar_chart.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_bar_chart.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_flare.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_flare.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_badge_duplicate.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_badge_duplicate.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_dot.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_dot.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/color_bottom_nav_colors.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/color/bottom_nav_colors.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_insights.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_insights.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_warning.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_warning.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_activity_main.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_badge_contradiction.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_badge_contradiction.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_decks.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_decks.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_card_regenerated.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_card_regenerated.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_fragment_conflict_detector.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/fragment_conflict_detector.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_more_vert.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_more_vert.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_sync.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_sync.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_item_gap.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/item_gap.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_item_failed_card.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/item_failed_card.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_settings.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_avatar.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/layout_item_conflict.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/layout/item_conflict.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/navigation_nav_graph.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_bg_avatar_teal_light.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/bg_avatar_teal_light.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_heart_broken.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_heart_broken.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_back.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_layers.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_layers.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_insights.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_insights.xml"
+    },
+    {
+        "merged": "com.ankiinsight.app-debug-55:/drawable_ic_lightbulb.xml.flat",
+        "source": "com.ankiinsight.app-main-57:/drawable/ic_lightbulb.xml"
+    }
+]

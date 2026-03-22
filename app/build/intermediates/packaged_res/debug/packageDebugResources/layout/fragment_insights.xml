@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_bar_chart"
+                app:tint="@color/color_primary" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Insights"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_primary_dark" />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_settings"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@color/color_text_secondary" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="Not enough data yet."
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/scrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Learning Health -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_learning_health"
+                android:textSize="12sp"
+                android:letterSpacing="0.1"
+                android:textColor="@color/color_text_secondary"
+                android:layout_marginBottom="12dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/color_divider">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="24dp"
+                    android:paddingHorizontal="24dp">
+                    
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:id="@+id/tvHealthScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="72"
+                            android:textSize="56sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_primary" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/100"
+                            android:textSize="20sp"
+                            android:textColor="@color/color_text_primary"
+                            android:layout_marginBottom="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvHealthScoreLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/learning_health_score"
+                        android:textColor="@color/color_text_secondary"
+                        android:layout_marginBottom="24dp" />
+
+                    <!-- Custom gradient indicator bar (Placeholder implementation) -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                        <ProgressBar
+                            android:id="@+id/indicatorBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:progressDrawable="@drawable/bg_health_gradient"
+                            android:progress="72"
+                            android:max="100" />
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="WEAK" android:gravity="center" android:textSize="10sp" android:textColor="@color/color_text_primary"/>
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="AVERAGE" android:gravity="center" android:textSize="10sp" android:textColor="@color/color_text_primary"/>
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="STRONG" android:gravity="center" android:textSize="10sp" android:textColor="@color/color_text_primary"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Forgetting Patterns -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetting_patterns"
+                android:textSize="12sp"
+                android:letterSpacing="0.1"
+                android:textColor="@color/color_text_secondary"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp"
+                android:weightSum="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/color_surface_variant">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_warning"
+                            app:tint="#B45309"
+                            android:layout_marginBottom="12dp"/>
+                        <TextView
+                            android:id="@+id/tvPattern1Label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Morning"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_text_primary"
+                            android:layout_marginBottom="8dp"/>
+                        <TextView
+                            android:id="@+id/tvPattern1Desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/color_text_secondary"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/color_surface_variant">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_warning"
+                            app:tint="@color/color_error"
+                            android:layout_marginBottom="12dp"/>
+                        <TextView
+                            android:id="@+id/tvPattern2Label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Long Answers"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_text_primary"
+                            android:layout_marginBottom="8dp"/>
+                        <TextView
+                            android:id="@+id/tvPattern2Desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/color_text_secondary"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Weakest Topics -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weakest_topics"
+                android:textSize="12sp"
+                android:letterSpacing="0.1"
+                android:textColor="@color/color_text_secondary"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <TextView android:id="@+id/tvTopic1Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/color_text_primary"/>
+                    <TextView android:id="@+id/tvTopic1Pct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:textStyle="bold" android:textColor="@color/color_error" android:textSize="12sp"/>
+                </RelativeLayout>
+                <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progressTopic1" android:layout_width="match_parent" android:layout_height="wrap_content" app:trackCornerRadius="4dp" app:indicatorColor="@color/color_error" app:trackThickness="6dp" android:progress="78"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <TextView android:id="@+id/tvTopic2Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/color_text_primary"/>
+                    <TextView android:id="@+id/tvTopic2Pct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:textStyle="bold" android:textColor="#B45309" android:textSize="12sp"/>
+                </RelativeLayout>
+                <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progressTopic2" android:layout_width="match_parent" android:layout_height="wrap_content" app:trackCornerRadius="4dp" app:indicatorColor="#B45309" app:trackThickness="6dp" android:progress="65"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <TextView android:id="@+id/tvTopic3Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/color_text_primary"/>
+                    <TextView android:id="@+id/tvTopic3Pct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:textStyle="bold" android:textColor="#F59E0B" android:textSize="12sp"/>
+                </RelativeLayout>
+                <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progressTopic3" android:layout_width="match_parent" android:layout_height="wrap_content" app:trackCornerRadius="4dp" app:indicatorColor="#F59E0B" app:trackThickness="6dp" android:progress="45"/>
+            </LinearLayout>
+
+            <!-- AI Recommendation Card (Teal border) -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_primary_dark" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_flare"
+                                app:tint="@color/color_primary_dark"
+                                android:layout_marginEnd="8dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Focus on Cell Biology today"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/color_text_primary" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tvAiRecommendation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_text_secondary"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_marginBottom="16dp"/>
+                        <TextView
+                            android:id="@+id/btnStartAnalysis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="@string/start_analysis"
+                            android:textColor="@color/color_primary_dark"
+                            android:textStyle="bold"
+                            android:clickable="true"
+                            android:focusable="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
