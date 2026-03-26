@@ -4,6 +4,14 @@
 
 ---
 
+### Video Prototype of what I made:
+
+
+
+https://github.com/user-attachments/assets/5269c143-8618-44b7-93fc-6a1f76d07745
+
+
+
 ## 🌟 Key Features
 
 ### 1. 🧠 AI Failure Analyser (Groq Llama 3.1)
